@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindFocus — Практики</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">MF</div>
+      <div class="brand-text">
+        <strong>MindFocus</strong>
+        <span>Навчальний веб-проєкт</span>
+      </div>
+    </div>
+
+    <nav class="menu" aria-label="Навігація">
+      <a href="index.html">Старт</a>
+      <a href="practices.html" class="active">Практики</a>
+      <a href="resources.html">Ресурси</a>
+      <a href="contact.html">Контакт</a>
+    </nav>
+
+    <section class="side-card" aria-label="Режим">
+      <h3 class="side-title">Режим</h3>
+      <button class="btn btn-ghost" type="button" id="themeToggle">
+        <span class="btn-ico" aria-hidden="true">🌙</span>
+        <span class="btn-text">Темна / Світла</span>
+      </button>
+      <p class="side-note">Тема спільна для всіх сторінок.</p>
+    </section>
+
+    <section class="side-card" aria-label="Швидкі дії">
+      <h3 class="side-title">Швидкі дії</h3>
+      <a class="btn btn-primary" href="index.html">← До прогресу</a>
+      <a class="btn btn-ghost" href="contact.html">Написати відгук</a>
+    </section>
+  </aside>
+
+  <main class="content">
+    <header class="top">
+      <div class="top-left">
+        <h1>Практики</h1>
+        <p class="subtitle">Короткі вправи, які можна виконати навіть коли «нема сил».</p>
+      </div>
+      <div class="top-right">
+        <a class="btn btn-primary" href="resources.html">Ресурси →</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Міні-набір на день</h2>
+
+        <div class="tiles">
+          <div class="tile">
+            <h3>Дихання 4-4</h3>
+            <p>Вдих 4 сек → пауза 4 сек. Повтори 6 разів.</p>
+            <span class="tag">~2 хв</span>
+          </div>
+
+          <div class="tile">
+            <h3>Вода + пауза</h3>
+            <p>Склянка води й 1 хв без екранів. Просто подивись у вікно.</p>
+            <span class="tag">~2 хв</span>
+          </div>
+
+          <div class="tile">
+            <h3>Мікро-рух</h3>
+            <p>5 присідань або розтяжка плечей. Без «спорту», тільки рух.</p>
+            <span class="tag">~3 хв</span>
+          </div>
+
+          <div class="tile">
+            <h3>Тиха хвилина</h3>
+            <p>Без музики. Відміть 3 звуки навколо і 3 відчуття в тілі.</p>
+            <span class="tag">~1 хв</span>
+          </div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>План-нагадування</h2>
+
+        <div class="callout">
+          <p><strong>Правило “мінімуму”:</strong> якщо важко — роби 1 маленьку дію. Це вже прогрес.</p>
+        </div>
+
+        <div class="list">
+          <div class="row"><span>Ранок</span><span class="muted">вода + 1 хв тиші</span></div>
+          <div class="row"><span>День</span><span class="muted">мікро-рух + дихання</span></div>
+          <div class="row"><span>Вечір</span><span class="muted">список 3 справ на завтра</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <span>Навчальний веб-проєкт (HTML + CSS + JS).</span>
+      <a class="to-top" href="#app">Нагору ↑</a>
+    </footer>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

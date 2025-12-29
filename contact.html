@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindFocus — Контакт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">MF</div>
+        <div class="brand-text">
+          <div class="brand-title">MindFocus</div>
+          <div class="brand-sub">Контакт</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Старт</a>
+        <a class="nav-link" href="practices.html">Практики</a>
+        <a class="nav-link" href="resources.html">Ресурси</a>
+        <a class="nav-link active" href="contact.html">Контакт</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="topbar">
+        <div class="crumbs">Контакт</div>
+
+        <div class="top-actions">
+          <a class="pill" href="index.html">На старт →</a>
+        </div>
+      </header>
+
+      <section class="hero">
+        <h1>Звʼязок</h1>
+        <p>
+          Це навчальний приклад: форма не надсилає дані в інтернет,
+          а показує “успіх” і зберігає чернетку локально.
+        </p>
+      </section>
+
+      <!-- GRID -->
+      <section class="grid">
+        <!-- ✅ ВИПРАВЛЕННЯ ВАЛІДАТОРА -->
+        <h2 class="sr-only">Контактні блоки</h2>
+
+        <!-- FORM -->
+        <article class="card">
+          <h3>Форма зворотного звʼязку</h3>
+
+          <form class="form" autocomplete="off">
+            <label>
+              Імʼя
+              <input type="text" placeholder="Напр.: Імʼя" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" placeholder="name@example.com" required>
+            </label>
+
+            <label>
+              Тема
+              <select>
+                <option>Відгук про проєкт</option>
+                <option>Запитання</option>
+                <option>Інше</option>
+              </select>
+            </label>
+
+            <label>
+              Повідомлення
+              <textarea rows="4" placeholder="Напиши коротко..."></textarea>
+            </label>
+
+            <button type="button" class="btn primary">
+              Надіслати (демо)
+            </button>
+          </form>
+        </article>
+
+        <!-- INFO -->
+        <article class="card">
+          <h3>Контактні дані (нейтральні)</h3>
+
+          <div class="info-row">
+            <span>Email</span>
+            <strong>mindfocus.demo@study.local</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Графік</span>
+            <strong>Пн–Пт, 10:00–18:00</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Мета</span>
+            <strong>Показ HTML / CSS / JS навичок</strong>
+          </div>
+
+          <div class="mini-map">
+            <div class="dot"></div>
+          </div>
+
+          <p class="muted small">
+            Без реальної карти — щоб не тягнути зовнішні ресурси.
+          </p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <div>Навчальний веб-проєкт (HTML + CSS).</div>
+        <a class="to-top" href="#top">Нагору ↑</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindFocus — Тиждень відновлення</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">MF</div>
+        <div class="brand-text">
+          <div class="brand-title">MindFocus</div>
+          <div class="brand-sub">Тиждень відновлення</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Старт</a>
+        <a class="nav-link" href="practices.html">Практики</a>
+        <a class="nav-link" href="resources.html">Ресурси</a>
+        <a class="nav-link" href="contact.html">Контакт</a>
+      </nav>
+
+      <section class="mode" aria-labelledby="modeTitle">
+        <h2 id="modeTitle" class="sr-only">Режим інтерфейсу</h2>
+        <div class="mode-title">Режим</div>
+        <button class="mode-btn" type="button" id="themeToggle" aria-pressed="false">
+          🌙 Темна / Світла
+        </button>
+
+        <div class="mode-meta">
+          <div>Форма</div>
+          <div class="right">локально</div>
+        </div>
+        <div class="mode-meta">
+          <div>Серія</div>
+          <div class="right">1 дн.</div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="topbar">
+        <div class="crumbs">Старт</div>
+
+        <div class="top-actions">
+          <a class="pill" href="index.html">Старт</a>
+          <a class="pill" href="#days">Дні</a>
+          <a class="pill" href="practices.html">Інструменти</a>
+          <a class="pill" href="contact.html">Контакт</a>
+        </div>
+      </header>
+
+      <section class="hero">
+        <h1>Тиждень відновлення</h1>
+        <p>Простий план на 7 днів для зменшення перевантаження, покращення самопочуття та повернення фокусу.</p>
+      </section>
+
+      <!-- Focus block -->
+      <section class="card focus" aria-labelledby="focusTitle">
+        <h2 id="focusTitle">Фокус-сесія</h2>
+        <p class="muted">
+          Навчальний таймер (демо). Працює локально в браузері та не надсилає дані в інтернет.
+        </p>
+
+        <div class="focus-row">
+          <!-- ✅ output is semantic; aria-label ok -->
+          <output class="focus-timer" id="focusTime" aria-label="Таймер фокус-сесії">25:00</output>
+
+          <div class="focus-buttons">
+            <button class="btn primary" type="button" id="startBtn">Старт</button>
+            <button class="btn" type="button" id="pauseBtn" disabled>Пауза</button>
+            <button class="btn" type="button" id="resetBtn">Скинути</button>
+          </div>
+        </div>
+
+        <!-- ✅ section with heading fixes warning -->
+        <section class="focus-presets" aria-labelledby="presetTitle">
+          <h3 id="presetTitle" class="sr-only">Налаштування таймера</h3>
+          <button class="chip" type="button" data-min="15">15 хв</button>
+          <button class="chip active" type="button" data-min="25">25 хв</button>
+          <button class="chip" type="button" data-min="45">45 хв</button>
+        </section>
+
+        <div class="focus-note">
+          <strong>Порада:</strong> почни з 15 хв, якщо зараз важко “включитись”.
+        </div>
+      </section>
+
+      <!-- Days -->
+      <section class="card" id="days" aria-labelledby="daysTitle">
+        <h2 id="daysTitle">План на 7 днів</h2>
+
+        <!-- ✅ was <div aria-label="Список днів">, now semantic section -->
+        <section class="checklist" aria-labelledby="listTitle">
+          <h3 id="listTitle" class="sr-only">Список днів</h3>
+
+          <div class="row">
+            <div class="day">День 1</div>
+            <div class="task">Легка пауза без новин</div>
+            <div class="time">~10 хв</div>
+          </div>
+
+          <div class="row">
+            <div class="day">День 2</div>
+            <div class="task">3 паузи по 2 хв: вода + повільне дихання (4–4)</div>
+            <div class="time">~6 хв</div>
+          </div>
+
+          <div class="row">
+            <div class="day">День 3</div>
+            <div class="task">Прогулянка або рух вдома</div>
+            <div class="time">10–15 хв</div>
+          </div>
+
+          <div class="row">
+            <div class="day">День 4</div>
+            <div class="task">Одна «тиха година» без соцмереж</div>
+            <div class="time">60 хв</div>
+          </div>
+
+          <div class="row">
+            <div class="day">День 5</div>
+            <div class="task">Розвантажити список справ: залишити 3 головні</div>
+            <div class="time">~10 хв</div>
+          </div>
+
+          <div class="row">
+            <div class="day">День 6</div>
+            <div class="task">5 хв «порядок навколо» (стіл/кімната)</div>
+            <div class="time">~5 хв</div>
+          </div>
+
+          <div class="row">
+            <div class="day">День 7</div>
+            <div class="task">Підсумок: що стало легше? (2–3 речення)</div>
+            <div class="time">~5 хв</div>
+          </div>
+        </section>
+
+        <div class="tip">
+          <strong>Порада:</strong> якщо якийсь день “не вийшов” — це теж частина відновлення.
+        </div>
+      </section>
+
+      <!-- ✅ section had no heading -> add hidden heading -->
+      <section class="grid" aria-labelledby="gridTitle">
+        <h2 id="gridTitle" class="sr-only">Додаткові блоки</h2>
+
+        <article class="card mini">
+          <h3>Прогрес</h3>
+          <div class="progress">
+            <div class="progress-top">
+              <span>Виконано</span>
+              <span id="doneCount">0</span><span>/7</span>
+            </div>
+            <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0">
+              <div class="bar-fill" id="barFill"></div>
+            </div>
+            <p class="muted small">Відмітки зберігаються у браузері.</p>
+          </div>
+
+          <div class="actions">
+            <button class="btn" type="button" id="markDone">Позначити +1</button>
+            <button class="btn" type="button" id="resetProgress">Скинути</button>
+          </div>
+        </article>
+
+        <article class="card mini">
+          <h3>Мікро-підказка</h3>
+          <p class="muted">Натисни кнопку нижче, щоб отримати коротку фразу підтримки.</p>
+          <p class="quote" id="quote">«Малий крок — це теж крок.»</p>
+          <button class="btn primary" type="button" id="newQuote">Змінити фразу</button>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <div>Навчальний веб-проєкт (HTML + CSS + JS).</div>
+        <a class="to-top" href="#top">Нагору ↑</a>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindFocus — Ресурси</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">MF</div>
+      <div class="brand-text">
+        <strong>MindFocus</strong>
+        <span>Навчальний веб-проєкт</span>
+      </div>
+    </div>
+
+    <nav class="menu" aria-label="Навігація">
+      <a href="index.html">Старт</a>
+      <a href="practices.html">Практики</a>
+      <a href="resources.html" class="active">Ресурси</a>
+      <a href="contact.html">Контакт</a>
+    </nav>
+
+    <section class="side-card" aria-label="Режим">
+      <h3 class="side-title">Режим</h3>
+      <button class="btn btn-ghost" type="button" id="themeToggle">
+        <span class="btn-ico" aria-hidden="true">🌙</span>
+        <span class="btn-text">Темна / Світла</span>
+      </button>
+      <p class="side-note">Без зовнішніх посилань — усе локально.</p>
+    </section>
+  </aside>
+
+  <main class="content">
+    <header class="top">
+      <div class="top-left">
+        <h1>Ресурси</h1>
+        <p class="subtitle">Підказки та “шпаргалки”, які можна перечитати за хвилину.</p>
+      </div>
+      <div class="top-right">
+        <a class="btn btn-primary" href="contact.html">Контакт →</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Шпаргалка: як повернути увагу</h2>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num" aria-hidden="true">1</div>
+            <div>
+              <h3>Зменши вхід</h3>
+              <p class="muted">Прибери 1 джерело шуму: вкладка, сповіщення, стрічка.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num" aria-hidden="true">2</div>
+            <div>
+              <h3>Одна дія</h3>
+              <p class="muted">Обери найменший крок, який можна зробити за 2 хв.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num" aria-hidden="true">3</div>
+            <div>
+              <h3>Короткий таймер</h3>
+              <p class="muted">Запусти фокус-сесію на 15/3 або 25/5 і просто почни.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="note">
+          Нагадування: “ідеально” не потрібно. Потрібно “достатньо”.
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Міні-словник</h2>
+
+        <div class="list">
+          <div class="row"><span><strong>Фокус</strong></span><span class="muted">зосередження на 1 задачі</span></div>
+          <div class="row"><span><strong>Пауза</strong></span><span class="muted">коротке відновлення</span></div>
+          <div class="row"><span><strong>Перевантаження</strong></span><span class="muted">забагато стимулів/справ</span></div>
+          <div class="row"><span><strong>Рутина</strong></span><span class="muted">повторювана дія, що знімає хаос</span></div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Лайфхак:</strong> коли важко — “зроби 10%”. Це працює краще, ніж чекати мотивацію.</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <span>Навчальний веб-проєкт (HTML + CSS + JS).</span>
+      <a class="to-top" href="#app">Нагору ↑</a>
+    </footer>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
